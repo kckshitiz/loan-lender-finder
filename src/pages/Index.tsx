@@ -22,16 +22,16 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      {/* Hero Section with Family Background */}
+      {/* Hero Section with NSW Home Background */}
       <section className="relative bg-gradient-to-br from-primary/10 via-primary/5 to-background py-20 overflow-hidden animate-fade-in">
-        {/* Background Image */}
+        {/* NSW Modern Home Background */}
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1973&q=80')`
+            backgroundImage: `url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80')`
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/95" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/95" />
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
@@ -72,53 +72,53 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Happy Families Section */}
+      {/* Happy NSW Families Section */}
       <section className="py-16 bg-white animate-fade-in">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4 animate-fade-in">Helping NSW Families Achieve Their Dreams</h2>
             <p className="text-lg text-muted-foreground animate-fade-in" style={{animationDelay: '0.2s'}}>
-              See how we've helped thousands of families find their perfect home
+              See how we've helped thousands of families find their perfect home across NSW
             </p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="relative overflow-hidden rounded-lg shadow-lg hover-scale animate-fade-in" style={{animationDelay: '0.4s'}}>
               <img 
-                src="https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Happy family with keys to new home"
+                src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Modern NSW family home exterior"
                 className="w-full h-64 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-4 left-4 text-white">
-                <h3 className="text-lg font-semibold">First Home Success</h3>
-                <p className="text-sm opacity-90">Sarah & Mike, Sydney</p>
+                <h3 className="text-lg font-semibold">Dream Home in Parramatta</h3>
+                <p className="text-sm opacity-90">Sarah & Mike's First Home</p>
               </div>
             </div>
             
             <div className="relative overflow-hidden rounded-lg shadow-lg hover-scale animate-fade-in" style={{animationDelay: '0.5s'}}>
               <img 
-                src="https://images.unsplash.com/photo-1594736797933-d0f7106c8bb6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Family in front of their new house"
+                src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Beautiful NSW suburban home with family"
                 className="w-full h-64 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-4 left-4 text-white">
-                <h3 className="text-lg font-semibold">Dream Home Achieved</h3>
-                <p className="text-sm opacity-90">The Johnson Family, Newcastle</p>
+                <h3 className="text-lg font-semibent">Family Home in Newcastle</h3>
+                <p className="text-sm opacity-90">The Johnson Family</p>
               </div>
             </div>
             
             <div className="relative overflow-hidden rounded-lg shadow-lg hover-scale animate-fade-in" style={{animationDelay: '0.6s'}}>
               <img 
-                src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Modern house exterior"
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Luxury NSW home with modern architecture"
                 className="w-full h-64 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-4 left-4 text-white">
-                <h3 className="text-lg font-semibold">Investment Success</h3>
-                <p className="text-sm opacity-90">Property Portfolio Growth</p>
+                <h3 className="text-lg font-semibold">Investment Property Success</h3>
+                <p className="text-sm opacity-90">Central Coast Investment</p>
               </div>
             </div>
           </div>
@@ -186,8 +186,8 @@ const Index = () => {
             </div>
             <div className="relative animate-fade-in" style={{animationDelay: '0.4s'}}>
               <img 
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
-                alt="NSW skyline and properties"
+                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+                alt="Sydney Opera House and harbor representing NSW property market"
                 className="w-full h-96 object-cover rounded-lg shadow-lg hover-scale"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent rounded-lg" />
