@@ -23,26 +23,26 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary/10 via-primary/5 to-background py-16">
+      <section className="bg-gradient-to-br from-primary/10 via-primary/5 to-background py-16 animate-fade-in">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <Badge variant="secondary" className="mb-4">
+            <Badge variant="secondary" className="mb-4 animate-scale-in">
               Licensed NSW Mortgage Broker
             </Badge>
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 animate-fade-in" style={{animationDelay: '0.2s'}}>
               Find Your Perfect
-              <span className="text-primary block">Home Loan</span>
+              <span className="text-primary block animate-slide-in-right" style={{animationDelay: '0.4s'}}>Home Loan</span>
             </h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8 animate-fade-in" style={{animationDelay: '0.6s'}}>
               As NSW's trusted mortgage brokers, we compare rates from 40+ lenders to find you 
               the best home loan deal. Our service is completely free - get pre-approved in 24 hours.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{animationDelay: '0.8s'}}>
+              <Button size="lg" className="text-lg px-8 hover-scale group">
                 Get Pre-Approved Now
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-200" />
               </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8">
+              <Button size="lg" variant="outline" className="text-lg px-8 hover-scale">
                 Compare Rates
               </Button>
             </div>
@@ -51,9 +51,9 @@ const Index = () => {
           {/*  Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
             {stats.map((stat, index) => (
-              <Card key={index} className="text-center">
+              <Card key={index} className="text-center hover-scale animate-fade-in" style={{animationDelay: `${1 + index * 0.1}s`}}>
                 <CardContent className="pt-6">
-                  <stat.icon className="h-8 w-8 text-primary mx-auto mb-2" />
+                  <stat.icon className="h-8 w-8 text-primary mx-auto mb-2 animate-scale-in" style={{animationDelay: `${1.2 + index * 0.1}s`}} />
                   <div className="text-2xl font-bold text-foreground">{stat.value}</div>
                   <div className="text-sm text-muted-foreground">{stat.label}</div>
                 </CardContent>
@@ -64,54 +64,60 @@ const Index = () => {
       </section>
 
       {/* Calculator Section */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-16 bg-muted/30 animate-fade-in">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold mb-4">Calculate Your Home Loan</h2>
-            <p className="text-lg text-muted-foreground">
+            <h2 className="text-3xl font-bold mb-4 animate-fade-in">Calculate Your Home Loan</h2>
+            <p className="text-lg text-muted-foreground animate-fade-in" style={{animationDelay: '0.2s'}}>
               Use our free calculator to estimate your monthly repayments and borrowing capacity
             </p>
           </div>
-          <LoanCalculator />
+          <div className="animate-scale-in" style={{animationDelay: '0.4s'}}>
+            <LoanCalculator />
+          </div>
         </div>
       </section>
 
       {/* Featured Lenders */}
-      <FeaturedLenders />
+      <div className="animate-fade-in">
+        <FeaturedLenders />
+      </div>
 
       {/* Broker Services */}
-      <BrokerServices />
+      <div className="animate-fade-in">
+        <BrokerServices />
+      </div>
 
       {/* NSW First Home Buyer Section */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-16 bg-muted/30 animate-fade-in">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-6">NSW First Home Buyer Specialists</h2>
-            <p className="text-lg text-muted-foreground mb-8">
+            <h2 className="text-3xl font-bold mb-6 animate-fade-in">NSW First Home Buyer Specialists</h2>
+            <p className="text-lg text-muted-foreground mb-8 animate-fade-in" style={{animationDelay: '0.2s'}}>
               Buying your first home in NSW? We'll help you navigate the First Home Owner Grant, 
               stamp duty exemptions, and find lenders with low deposit options.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <Card>
+              <Card className="hover-scale animate-fade-in" style={{animationDelay: '0.4s'}}>
                 <CardContent className="pt-6 text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">$10,000</div>
+                  <div className="text-3xl font-bold text-primary mb-2 animate-scale-in" style={{animationDelay: '0.6s'}}>$10,000</div>
                   <p className="text-muted-foreground">NSW First Home Owner Grant</p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="hover-scale animate-fade-in" style={{animationDelay: '0.5s'}}>
                 <CardContent className="pt-6 text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">5%</div>
+                  <div className="text-3xl font-bold text-primary mb-2 animate-scale-in" style={{animationDelay: '0.7s'}}>5%</div>
                   <p className="text-muted-foreground">Minimum Deposit Options</p>
                 </CardContent>
               </Card>
-              <Card>
+              <Card className="hover-scale animate-fade-in" style={{animationDelay: '0.6s'}}>
                 <CardContent className="pt-6 text-center">
-                  <div className="text-3xl font-bold text-primary mb-2">$800K</div>
+                  <div className="text-3xl font-bold text-primary mb-2 animate-scale-in" style={{animationDelay: '0.8s'}}>$800K</div>
                   <p className="text-muted-foreground">Stamp Duty Exemption Limit</p>
                 </CardContent>
               </Card>
             </div>
-            <Button size="lg">
+            <Button size="lg" className="hover-scale animate-fade-in" style={{animationDelay: '1s'}}>
               First Home Buyer Guide
             </Button>
           </div>
